@@ -12,13 +12,14 @@
             rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
     </head>
 
     <body>
         <!-- header -->
         <section class="header-section">
             <div class="navbar navbar-expand-xl container">
-                <!-- <div class="container"> -->
                 <a class="header-col-left" href="#">HueEcom</a>
                 <button class="navbar-toggler navbar-light" type="button"
                     data-bs-toggle="collapse"
@@ -27,7 +28,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse zoom" id="navbarNav">
                     <ul class="flex-grow-1 header-col-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#section1">GIỚI THIỆU</a>
@@ -44,7 +45,6 @@
                             class="header-col-right-btn" href="#section1">ĐĂNG
                             KÝ DÙNG THỬ</a></button>
                 </div>
-                <!-- </div> -->
             </div>
         </section>
         <!-- end header -->
@@ -82,6 +82,7 @@
                 </div>
                 <div class="main-feature-banner">
                     <img src="images/feature.svg" class="main-feature-img">
+                    <!-- <img src="images/Vector.svg" class="vector"> -->
 
                     <div class="feature-box">
                         <div class="box-col-left">
@@ -90,10 +91,10 @@
                                 <div class="inner-box1">
                                     <div class="word-inner-box1">Quản lý kênh
                                         bán hàng<br />tập trung</div>
-                                    <div class="word-inner-box2">Cho phép đăng
+                                    <div class="word-inner-box2"><p>Cho phép đăng
                                         nhập vào hệ thống để xem tất cả dữ liệu
                                         từ các kênh bán hàng, quản lý tất cả đơn
-                                        hàng trên một nền tảng duy nhất.</div>
+                                        hàng trên một nền tảng duy nhất.</p></div>
                                 </div>
                             </div>
                             <div class="box2">
@@ -101,11 +102,11 @@
                                 <div class="inner-box2">
                                     <div class="word-inner-box3">Kết nối bán
                                         hàng<br />"one click"</div>
-                                    <div class="word-inner-box4">Hỗ trợ đăng bán
+                                    <div class="word-inner-box4"><p>Hỗ trợ đăng bán
                                         sản phẩm lên nhiều kênh trong một lần
                                         thực hiện. Tạo sản phẩm trong kho và
                                         đăng bán ngay lên tất cả các gian hàng
-                                        đã kết nối.</div>
+                                        đã kết nối.</p></div>
                                 </div>
                             </div>
                         </div>
@@ -118,10 +119,10 @@
                                 <div class="inner-box3">
                                     <div class="word-inner-box5">Theo dõi giao
                                         dịch tự động</div>
-                                    <div class="word-inner-box6">Cho phép theo
+                                    <div class="word-inner-box6"><p>Cho phép theo
                                         dõi tiến trình giao dịch, theo dõi số
                                         lượng sản phẩm đã bán, số lượng đơn
-                                        hàng…</div>
+                                        hàng…</p></div>
                                 </div>
                             </div>
                             <div class="box4">
@@ -129,12 +130,12 @@
                                 <div class="inner-box4">
                                     <div class="word-inner-box7">Thống kê trực
                                         quan</div>
-                                    <div class="word-inner-box8">Hỗ trợ các
+                                    <div class="word-inner-box8"><p>Hỗ trợ các
                                         doanh nghiệp quản lý kho hàng một cách
                                         tập trung, hỗ trợ thống kê doanh số,
                                         doanh thu của doanh nghiệp ở mỗi gian
                                         hàng trên các sàn thương mại điện tử
-                                        theo thời gian thực.</div>
+                                        theo thời gian thực.</p></div>
                                 </div>
                             </div>
                         </div>
@@ -193,36 +194,37 @@
                 <div class="product-box">
                     <div class="product-content1">
                         <div class="product-number">02</div>
-                        <div class="product-word-header">
-                            <div class="product-word1">QUẢN LÝ SẢN PHẨM</div>
+                        <div class="manage-product">
+                            <div class="product-word1 product-word-header">QUẢN LÝ SẢN PHẨM</div>
+                            <div class="product-content2">
+                                <div class="function-word5">
+                                    <img src="images/check_circle.svg"
+                                        class="check-circle">
+                                    <div class="function-word">Quản lý thông tin sản
+                                        phẩm</div>
+                                </div>
+                                <div class="function-word6">
+                                    <img src="images/check_circle.svg"
+                                        class="check-circle">
+                                    <div class="function-word">Đồng bộ, quản lý tập
+                                        trung sản phẩm về chung một kho</div>
+                                </div>
+                                <div class="function-word7">
+                                    <img src="images/check_circle.svg"
+                                        class="check-circle">
+                                    <div class="function-word">Đăng bán sản phẩm đồng
+                                        thời trên nhiều sàn thương mại điện tử</div>
+                                </div>
+                                <div class="function-word7">
+                                    <img src="images/check_circle.svg"
+                                        class="check-circle">
+                                    <div class="function-word">Theo dõi số lượng đã bán
+                                        trên các gian hàng</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-content2">
-                        <div class="function-word5">
-                            <img src="images/check_circle.svg"
-                                class="check-circle">
-                            <div class="function-word">Quản lý thông tin sản
-                                phẩm</div>
-                        </div>
-                        <div class="function-word6">
-                            <img src="images/check_circle.svg"
-                                class="check-circle">
-                            <div class="function-word">Đồng bộ, quản lý tập
-                                trung sản phẩm về chung một kho</div>
-                        </div>
-                        <div class="function-word7">
-                            <img src="images/check_circle.svg"
-                                class="check-circle">
-                            <div class="function-word">Đăng bán sản phẩm đồng
-                                thời trên nhiều sàn thương mại điện tử</div>
-                        </div>
-                        <div class="function-word7">
-                            <img src="images/check_circle.svg"
-                                class="check-circle">
-                            <div class="function-word">Theo dõi số lượng đã bán
-                                trên các gian hàng</div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -272,9 +274,9 @@
 
                 <div class="product-box">
                     <div class="product-content1">
-                        <div class="product-number">04</div>
+                        <div class="total-number">04</div>
                         <div class="product-word-header">
-                            <div class="product-word1">THỐNG KÊ BÁN HÀNG</div>
+                            <div class="total-word">THỐNG KÊ BÁN HÀNG</div>
                         </div>
                     </div>
                     <div class="product-content2">
@@ -348,7 +350,21 @@
             });
         });
     </script>
-    
+    <script>
+        $(document).ready(function() {
+          var header = $(".header-section");
+      
+          $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+      
+            if (scroll >= 50) {
+              header.addClass("fixed-header");
+            } else {
+              header.removeClass("fixed-header");
+            }
+          });
+        });
+      </script>
         
     </body>
 

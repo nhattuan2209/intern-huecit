@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
     margin: 0;
     line-height: normal;
-    font-family: sans-serif;
+    font-family: 'Roboto';
 }
 
-/* .root {
-    width: 1920px;
-    height: 100%;
-    position: relative;
-    background: white;
-    max-width: 100%;
-} */
+p{
+    margin: 0px;
+}
+.navbar {
+    padding: 10px 0;
+}
+
+.header-col-left {
+    font-weight: bold;
+}
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 0.5s ease;
+}
 
 li {
     text-decoration: none;
@@ -23,20 +37,6 @@ a:link {
 
 a:visited {
     text-decoration: none;
-}
-
-.header {
-    /* width: 100%;
-    height: 100%;
-    width: 1920px;
-    max-width: 100%; */
-    /* padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 24px; */
-    /* padding-bottom: 175px; */
-    /* justify-content: space-between;
-    align-items: center;
-    display: inline-flex */
 }
 
 .header-col-left {
@@ -248,7 +248,9 @@ a:visited {
 
 .tinh-nang-section {
     /* width: 100%; */
-
+    background-image: url('images/tinh-nang-section.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* .main-feature {
@@ -300,9 +302,13 @@ a:visited {
     justify-content: flex-start;
     align-items: center;
     gap: 65px;
-    display: inline-flex
+    display: inline-flex;
 }
+.vector{
+    width: 2498.5px;
+height: 530.404px;
 
+}
 .main-feature-img {
     width: 611px;
     height: 608px;
@@ -327,7 +333,8 @@ a:visited {
 }
 
 .box1 {
-    height: 345px;
+    /* height: 345px; */
+    width: 306px;
     padding: 32px;
     background: white;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
@@ -347,7 +354,7 @@ a:visited {
 
 .inner-box1 {
     align-self: stretch;
-    height: 152px;
+    /* height: 152px; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -376,7 +383,8 @@ a:visited {
 }
 
 .box2 {
-    height: 324px;
+    /* height: 324px; */
+    width: 306px;
     padding: 32px;
     background: white;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
@@ -396,7 +404,7 @@ a:visited {
 
 .inner-box2 {
     align-self: stretch;
-    height: 176px;
+    /* height: 176px; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -434,7 +442,7 @@ a:visited {
 }
 
 .box3 {
-    height: 252px;
+    width: 306px;
     padding: 32px;
     background: white;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
@@ -462,7 +470,6 @@ a:visited {
 
 .inner-box3 {
     align-self: stretch;
-    height: 104px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -491,7 +498,7 @@ a:visited {
 }
 
 .box4 {
-    height: 324px;
+    width: 306px;
     padding: 32px;
     background: white;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
@@ -511,7 +518,7 @@ a:visited {
 
 .inner-box4 {
     align-self: stretch;
-    height: 176px;
+    /* height: 176px; */
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -563,6 +570,7 @@ a:visited {
 }
 
 .chuc-nang-section {
+    padding-bottom: 60px;
     /* width: 100%; */
     background: #F3F7FF;
 }
@@ -609,7 +617,8 @@ a:visited {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 32px;
-    display: inline-flex
+    display: inline-flex;
+    padding-bottom: 80px;
 }
 
 .function-content1 {
@@ -620,15 +629,18 @@ a:visited {
 }
 
 .function-manage1 {
+    position: relative;
+    top: 32px;
     color: rgba(10, 29, 82, 0.10);
     font-size: 96px;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: 900;
     line-height: 96px;
-    /* word-wrap: break-word */
+    word-wrap: break-word
 }
 
 .manage1 {
+    z-index: 999;
     padding-top: 16px;
     padding-bottom: 16px;
     background: #F3F7FF;
@@ -640,10 +652,10 @@ a:visited {
 .function-word4 {
     color: #003ECF;
     font-size: 48px;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: 900;
     line-height: 48px;
-    /* word-wrap: break-word */
+    word-wrap: break-word
 }
 
 .check-circle {
@@ -759,30 +771,60 @@ a:visited {
 }
 
 .product-number {
+    /* top: 35px; */
+    position: relative;
     color: rgba(10, 29, 82, 0.10);
     font-size: 96px;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: 900;
     line-height: 96px;
-    /* word-wrap: break-word */
+    word-wrap: break-word
+}
+
+.total-number {
+    position: relative;
+    color: rgba(10, 29, 82, 0.10);
+    font-size: 96px;
+    font-family: Roboto;
+    font-weight: 900;
+    line-height: 96px;
+    word-wrap: break-word;
+    top: 35px;
+}
+
+.total-word {
+    color: #003ECF;
+    font-size: 48px;
+    font-family: Roboto;
+    font-weight: 900;
+    line-height: 48px;
+    word-wrap: break-word;
+    padding-bottom: 26px;
 }
 
 .product-word-header {
-    padding-top: 16px;
     padding-bottom: 16px;
     background: white;
     justify-content: flex-start;
     align-items: flex-start;
-    display: inline-flex
+    display: inline-flex;
+    z-index: 999;
 }
 
 .product-word1 {
     color: #003ECF;
     font-size: 48px;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: 900;
     line-height: 48px;
-    /* word-wrap: break-word */
+    word-wrap: break-word;
+    padding-bottom: 26px;
+}
+
+.manage-product {
+    z-index: 999;
+    top: -35px;
+    position: relative;
 }
 
 .bill-content2 {
@@ -796,6 +838,8 @@ a:visited {
 }
 
 .hoa-don-section {
+    padding-bottom: 60px;
+    background: #F3F7FF;
     /* width: 100%; */
 }
 
@@ -828,19 +872,22 @@ a:visited {
 .bill-word1 {
     color: #003ECF;
     font-size: 48px;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: 900;
     line-height: 48px;
-    /* word-wrap: break-word */
+    word-wrap: break-word
 }
 
 .bill-number {
     color: rgba(10, 29, 82, 0.10);
     font-size: 96px;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: 900;
     line-height: 96px;
-    /* word-wrap: break-word */
+    word-wrap: break-word;
+    position: relative;
+    top: 32px;
+
 }
 
 .bill-box {
@@ -860,6 +907,7 @@ a:visited {
 }
 
 .bill-word {
+    z-index: 999;
     padding-top: 16px;
     padding-bottom: 16px;
     background: #F3F7FF;
@@ -892,10 +940,10 @@ a:visited {
     /* text-align: center; */
     color: white;
     font-size: 16px;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: 500;
     line-height: 24px;
-    /* word-wrap: break-word */
+    word-wrap: break-word
 }
 
 .hue-cit {
@@ -921,6 +969,8 @@ a:visited {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
 }
 
@@ -933,23 +983,23 @@ a:visited {
 .hue-cit1 {
     color: white;
     font-size: 14px;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: 400;
     line-height: 20px;
-    /* word-wrap: break-word */
+    word-wrap: break-word
 }
 
 .hue-cit2 {
     color: white;
     font-size: 14px;
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-weight: 500;
     line-height: 20px;
-    /* word-wrap: break-word */
+    word-wrap: break-word
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
     .hero-banner {
         flex-direction: column;
     }
@@ -982,6 +1032,21 @@ a:visited {
         flex-direction: column-reverse;
         align-items: center;
     }
+    .header-col-center{
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 32px;
+        display: flex;
+        color: #0A1D52;
+        padding-left: 175px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .zoom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end !important;
+}
 }
 
 #scrollToTopBtn {
@@ -1020,6 +1085,8 @@ a:visited {
     .function-banner {
         width: 415px;
         height: 320px;
+        position: relative;
+        top: 40px;
 
     }
 
@@ -1078,6 +1145,7 @@ a:visited {
 
     .function-banner {
         width: 325px;
+        top: 100px;
     }
 
     .product-box {
@@ -1088,13 +1156,31 @@ a:visited {
     .product-banner {
         padding-top: 105px;
     }
-    .bill-box{
+
+    .bill-box {
         width: 320px;
     }
-    .bill-banner{
+
+    .bill-banner {
         width: 320px;
     }
+
     .thong-ke-banner {
         padding-top: 55px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .box1 {
+        width: unset;
+    }
+    .box2 {
+        width: unset;
+    }
+    .box3 {
+        width: unset;
+    }
+    .box4 {
+        width: unset;
     }
 }
