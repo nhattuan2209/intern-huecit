@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     margin: 0;
     line-height: normal;
     font-family: 'Roboto';
+    overflow-x: hidden;
 }
 
-p{
+p {
     margin: 0px;
 }
+
 .navbar {
     padding: 10px 0;
 }
@@ -304,11 +307,13 @@ a:visited {
     gap: 65px;
     display: inline-flex;
 }
-.vector{
+
+.vector {
     width: 2498.5px;
-height: 530.404px;
+    height: 530.404px;
 
 }
+
 .main-feature-img {
     width: 611px;
     height: 608px;
@@ -1002,6 +1007,7 @@ height: 530.404px;
 @media (max-width: 1199px) {
     .hero-banner {
         flex-direction: column;
+        padding-bottom: 190px;
     }
 
     .main-feature-banner {
@@ -1032,7 +1038,8 @@ height: 530.404px;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .header-col-center{
+
+    .header-col-center {
         justify-content: flex-start;
         align-items: flex-end;
         gap: 32px;
@@ -1042,11 +1049,50 @@ height: 530.404px;
         margin-top: 20px;
         flex-direction: column;
     }
+
     .zoom {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end !important;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end !important;
+    }
+
+    .hero-content4 {
+        padding: 12px 20px 12px 20px;
+    }
+
+    .banner-img {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        opacity: 0.5;
+        top: 50px;
+    }
+
+    .main-feature-img {
+        width: 100%;
+    }
+
+    .hero-btn {
+        line-height: unset;
+        font-size: 15px;
+    }
+
+    .hero-banner-content {
+        z-index: 1;
+    }
+
+    .function-title {
+        z-index: 1;
+    }
+
+    .feature-box {
+        z-index: 1;
+    }
+
+    .main-feature-img {
+        position: absolute;
+        opacity: 0.5;
+    }
 }
 
 #scrollToTopBtn {
@@ -1067,7 +1113,9 @@ height: 530.404px;
         width: 380px;
         height: 320px;
     }
-
+    .product-content2{
+        height: unset;
+    }
     .main-feature-img {
         width: 380px;
         height: 320px;
@@ -1100,19 +1148,19 @@ height: 530.404px;
     }
 
     .product-box {
-        width: 380px;
+        width: 100%;
     }
 
     .bill-box {
-        width: 415px;
+        width: 100%;
     }
 
     .bill-banner {
-        width: 415px;
+        width: 100%;
     }
 
     .thong-ke-banner {
-        width: 415px;
+        width: 100%;
     }
 
     .footer {
@@ -1131,26 +1179,29 @@ height: 530.404px;
     .box-col-right {
         padding-top: 40px;
     }
+    .hero-banner{
+        padding-bottom: unset;
+    }
 }
 
 @media only screen and (max-width: 320px) {
     .banner-img {
-        width: 320px;
-        height: 300px;
+        width: 100%;
+        /* height: 300px; */
     }
 
     .main-feature-img {
-        width: 320px;
+        width: 100;
     }
 
     .function-banner {
-        width: 325px;
+        width: 100;
         top: 100px;
     }
 
     .product-box {
 
-        width: 320px;
+        width: 100;
     }
 
     .product-banner {
@@ -1158,11 +1209,11 @@ height: 530.404px;
     }
 
     .bill-box {
-        width: 320px;
+        width: 100;
     }
 
     .bill-banner {
-        width: 320px;
+        width: 100;
     }
 
     .thong-ke-banner {
@@ -1174,13 +1225,103 @@ height: 530.404px;
     .box1 {
         width: unset;
     }
+
     .box2 {
         width: unset;
     }
+
     .box3 {
         width: unset;
     }
+
     .box4 {
         width: unset;
     }
+
+    .hero-content1 {
+        font-size: 38px;
+        line-height: normal;
+    }
+
+    .hero-content1::after {
+        font-size: 38px;
+        line-height: normal;
+    }
+
+    .hero-content3 {
+        line-height: normal;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .feature-word3 {
+        font-size: 25px;
+    }
+
+    .feature-word1 {
+        font-size: 25px;
+    }
+
+    .box1 {
+        padding: 20px;
+    }
+
+    .box2 {
+        padding: 20px;
+    }
+
+    .box3 {
+        padding: 20px;
+    }
+
+    .box4 {
+        padding: 20px;
+    }
+
+    .box-icon1 {
+        width: 50px;
+        height: unset;
+    }
+
+    .box-icon2 {
+        width: 50px;
+        height: unset;
+    }
+
+    .box-icon3 {
+        width: 50px;
+        height: unset;
+    }
+
+    .box-icon4 {
+        width: 50px;
+        height: unset;
+    }
+
+    .function-word1 {
+        font-size: 25px;
+    }
+
+    .function-word2 {
+        font-size: 25px;
+    }
+
+    .function-word3 {
+        font-size: 25px;
+    }
+
+    .function-word4 {
+        font-size: 32px;
+    }
+    .product-word1{
+        font-size: 32px;
+    }
+    .bill-word1{
+        font-size: 32px;
+    }
+    .total-word{
+        font-size: 32px;
+    }
+
 }
